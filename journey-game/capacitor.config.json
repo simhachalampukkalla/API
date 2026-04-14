@@ -1,0 +1,6 @@
+{
+  "appId": "com.journeygame.app",
+  "appName": "Journey Game",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

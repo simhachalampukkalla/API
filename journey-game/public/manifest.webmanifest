@@ -1,0 +1,16 @@
+{
+  "name": "Journey Game",
+  "short_name": "Journey",
+  "description": "A journey-themed tile game with coins and obstacles.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
