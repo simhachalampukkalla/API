@@ -1,0 +1,47 @@
+name: React CI-CD (Test Only)
+ 
+on:
+  push:
+    branches:
+      - master
+ 
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+ 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+ 
+      - name: Install dependencies
+        run: npm install
+ 
+      - name: Run tests
+        run: npm test -- --watchAll=false
+ 
+      - name: Build React app
+        run: npm run build
+ 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: react-build
+          path: build/
+ 
+  cd:
+    needs: ci
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: react-build
+ 
+      - name: Verify build exists
+        run: ls -R build/

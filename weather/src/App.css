@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #506578;
+  color: white;
+  background-image: url('pexels-dephshot-16356229.jpg');
+  background-size: cover;
+}
+
+.app {
+  text-align: center;
+  padding: 50px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 0px solid #ccc;
+  width: 200px;
+}
+
+.h2 {
+  color: white;
+  font-size: 15px !important;
+}
+
+.h1 {
+  color: white;
+}
+
+.card {
+  margin-top: 20px;
+  background: rgba(190, 54, 54, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  width: 120px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 0px solid #ccc;
+  width: 100px !important;
+}
+
+.formbtn{
+    background-color: rgba(139, 80, 236, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .tImage{
+    height: 50px;
+    border-radius: 8px;
+    border: 2px solid white;
+    /* width: 50px;
+    object-fit: contain; */
+  }
