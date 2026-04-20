@@ -132,7 +132,11 @@ function App() {
     <main className="app-shell">
       <header className="title-bar">
         <div className="header-top">
-          <p className="badge">⚡ Color Pickup</p>
+          <div className="title-copy">
+            <p className="badge">⚡ Color Pickup</p>
+            <h1>Ready to match the color?</h1>
+            <p className="subtitle">Tap the target tone before time runs out and climb the leaderboard.</p>
+          </div>
           <div className="stat-chips">
             <span className="chip">⭐ LEVEL {level}</span>
             <span className="chip">🏅 BEST {bestScore}</span>
